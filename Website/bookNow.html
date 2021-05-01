@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <title>VR CarRental</title>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">VR Car Rental</a>
+        <div class="header-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="bookNow.html">Book Now</a>
+          <a href="#about">About</a>
+        </div>
+    </div>
+
+    <section class="tiles">
+        <article class="style1">
+            <span class="image">
+                <img src="nissangtr.jpeg" alt="" />
+            </span>
+            <a href="#footer" class="scrolly">
+                <h2>Nissan GTR R34 </h2>
+                
+                <p>price from: <strong> $ 350.00</strong> per day</p>
+
+            </a>
+        </article>
+
+        <article class="style2">
+            <span class="image">
+                <img src="supraupdate.jpeg" alt="" />
+            </span>
+            <a href="#footer" class="scrolly">
+                <h2>Toyota Supra MK4</h2>
+                
+                <p>price from: <strong> $ 375.00</strong> per day</p>
+
+                
+            </a>
+        </article>
+
+    </section>
+
+<middle id="footer">
+    <div class="middle">
+        <section>
+            <h2>Book now</h2>
+            <form method="post" action="#">
+                <div class="fields nextTo">
+                    <div class="field half">
+                        <input type="text" name="name" id="name" placeholder="Your Name" />
+                    </div>
+
+                    <div class="field half ">
+                        <select name="vehicle-type" id="vehicle-type">
+                            <option value="">Select Offer 1</option>
+                            <option value="">Select Offer 2</option>
+                            
+                            
+                        </select>
+                    </div>
+
+                    <div class="field half nextTo">
+                        <input type="text" name="date-from" id="date-from" placeholder="Pick-up date/time" />
+                    </div>
+
+                    <div class="field half nextTo">
+                        <input type="text" name="date-to" id="date-to" placeholder="Return date/tiem" />
+                    </div>
+
+                    <div class="field half ">
+                        <input type="text" name="email" id="email" placeholder="Email" />
+                    </div>
+
+                    <div class="field half nextTo">
+                        <input type="text" name="phone" id="phone" placeholder="Phone" />
+                    </div>
+
+                    <div class="field">
+                        <textarea name="message" id="message" rows="3" placeholder="Comment"></textarea>
+                    </div>
+
+                    <div class="field text-right">
+                        <label>&nbsp;</label>
+
+                        <ul class="actions">
+                            <li><input type="submit" value="Book now" class="primary" /></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+</middle>
+
+
+
+
+
+
+</body>
+</html>

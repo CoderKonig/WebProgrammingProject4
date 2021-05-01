@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <title>VR CarRental</title>
+<head>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+<div class="header">
+    <a href="#default" class="logo">VR Car Rental</a>
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="bookNow.html">Book Now</a>
+      <a href="test.php">Avaliability</a>
+    </div>
+</div>
+
+<section class="tiles">
+    <article class="style1">
+        <span class="image">
+            <img src="nissangtr.jpeg" alt="" />
+        </span>
+        <a href="#footer" class="scrolly">
+            <h2>Nissan GTR R34 </h2>
+            
+            <p>price from: <strong> $ 350.00</strong> per day</p>
+
+        </a>
+    </article>
+
+    <article class="style2">
+        <span class="image">
+            <img src="supraupdate.jpeg" alt="" />
+        </span>
+        <a href="#footer" class="scrolly">
+            <h2>Toyota Supra MK4</h2>
+            
+            <p>price from: <strong> $ 375.00</strong> per day</p>
+
+            
+        </a>
+    </article>
+
+</section>
+  
+<div style="padding-left:20px">
+    <h1>PREMIUM CAR RENTAL FROM VR RENT A CAR</h1>
+    <p>
+        VR rent a car was founded in Munich, Germany in 1912, and started out with a fleet of just three vehicles. As one of the first and most influential international car rental companies in the world - with over 100 years in the business - we have earned a trusted reputation as a global leading car rental provider. Always at the forefront of the industry, we were the first car rental company with a website and the first to accept mobile reservations. Today we are present in over 105 countries with branches in over 2,200 locations. You will be able to easily find VR car rental services internationally in almost every major city and tourist destination worldwide. We offer convenient locations such as airports, train stations, cruise ports, and hotels.</p>
+    <p>Some content..</p>
+</div>
+<middle id="footer">
+    <div class="middle">
+        <section>
+            <h2>Book now</h2>
+            <form method="post" action="#">
+                <div class="fields nextTo">
+                    <div class="field half">
+                        <input type="text" name="name" id="name" placeholder="Your Name" />
+                    </div>
+
+                    <div class="field half ">
+                        <select name="vehicle-type" id="vehicle-type">
+                            <option value="">Select Offer 1</option>
+                            <option value="">Select Offer 2</option>
+                            
+                        </select>
+                    </div>
+
+                    <div class="field half nextTo">
+                        <input type="text" name="date-from" id="date-from" placeholder="Pick-up date/time" />
+                    </div>
+
+                    <div class="field half nextTo">
+                        <input type="text" name="date-to" id="date-to" placeholder="Return date/tiem" />
+                    </div>
+
+                    <div class="field half ">
+                        <input type="text" name="email" id="email" placeholder="Email" />
+                    </div>
+
+                    <div class="field half nextTo">
+                        <input type="text" name="phone" id="phone" placeholder="Phone" />
+                    </div>
+
+                    <div class="field">
+                        <textarea name="message" id="message" rows="3" placeholder="Comment"></textarea>
+                    </div>
+
+                    
+
+                    <div class="field text-right">
+
+                        <form method="post" href="retrieve.php">
+                            <input type="submit" name="Book Now!"
+                                    value="Button1" id="myButton"/>
+
+                            
+                        <!-- <label>&nbsp;</label>
+
+                        <ul class="actions">
+                            <li><input type="submit" value="Book now" class="primary" /></li>
+                        </ul> -->
+                    </div>
+
+                    <!-- <button id="myButton" class="float-left submit-button" >Home</button>
+                    <script type="text/javascript">
+                        document.getElementById("myButton").onclick = function () {
+                            location.href = "retrieve.php";
+                        };
+                    </script>     -->
+
+                    <!-- <?php
+      
+                        if(isset($_POST['Button1'])) {
+                            echo "This is Button1 that is selected";
+                        }
+        
+                    ?> -->
+
+
+
+                </div>
+            </form>
+        </section>
+</middle>
+
+
+</body>
+</html>

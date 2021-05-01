@@ -1,0 +1,52 @@
+<?php
+include_once 'database.php';
+$result = mysqli_query($conn,"SELECT * FROM Cars");
+?>
+<!DOCTYPE html>
+<html>
+ <head>
+ <title> Retrive data</title>
+ </head>
+<body>
+<?php
+if (mysqli_num_rows($result) > 0) {
+?>
+  <table>
+  
+  <tr>
+    <td>Car_id</td>
+    <td>Type_id</td>
+    <td>brand</td>
+    <td>model</td>
+    <td>year</td>
+    <td>vin</td>
+    <td>plate_number</td>
+    <td>color</td>
+  </tr>
+<?php
+$i=0;
+while($row = mysqli_fetch_array($result)) {
+?>
+<tr>
+    <td><?php echo $row["car_id"]; ?></td>
+    <td><?php echo $row["type_id"]; ?></td>
+    <td><?php echo $row["brand"]; ?></td>
+    <td><?php echo $row["model"]; ?></td>
+    <td><?php echo $row["year"]; ?></td>
+    <td><?php echo $row["vin"]; ?></td>
+    <td><?php echo $row["plate_number"]; ?></td>
+    <td><?php echo $row["color"]; ?></td>
+</tr>
+<?php
+$i++;
+}
+?>
+</table>
+ <?php
+}
+else{
+    echo "No result found";
+}
+?>
+ </body>
+</html>
